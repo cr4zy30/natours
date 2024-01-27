@@ -10,7 +10,7 @@ It has its own RESTful API. SendGrid is used for emails. Stripe is used for paym
 
 ### Tour details 
 Displays the tour's information on a single page (duration, location, rating, nb. of participants, difficulty, next date, description, tour guides, reviews, images). 
-The data is reveived from an API request (ex: /tour/the-sea-explorer) 
+The data is received from an API request (ex: /tour/the-sea-explorer) 
 
 ![image](https://github.com/cr4zy30/natours/assets/112426363/290f0573-d8c4-49e9-bc54-b3d8e644b8bf)
 ![image](https://github.com/cr4zy30/natours/assets/112426363/dbc4a4d3-0e3a-46c0-88d4-9798df760ac1)
@@ -18,7 +18,7 @@ The data is reveived from an API request (ex: /tour/the-sea-explorer)
 ![image](https://github.com/cr4zy30/natours/assets/112426363/d486dd2f-e4c2-4b33-9189-51d39d451204)
 
 ### Log in
-All users a stored in the MongoDB database. Passwords are encrypted. Works with JSON Web Tokens.
+All users are stored in the MongoDB database. Passwords are encrypted. Works with JSON Web Tokens.
 
 ![image](https://github.com/cr4zy30/natours/assets/112426363/08de5370-2c96-4480-a48f-407414a48e14)
 
