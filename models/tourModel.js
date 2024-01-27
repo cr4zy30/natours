@@ -198,10 +198,10 @@ tourSchema.pre(/^find/, function (next) {
 });
 
 // docs = all the documents returned from the query
-tourSchema.post(/^find/, function (docs, next) {
-  console.log(`Query took: ${Date.now() - this.start} milliseconds!`);
-  next();
-});
+// tourSchema.post(/^find/, function (docs, next) {
+//   console.log(`Query took: ${Date.now() - this.start} milliseconds!`);
+//   next();
+// });
 
 // AGGREGATION MIDDLEWARE, remove secret tour, "this" = current aggregation object
 // tourSchema.pre('aggregate', function (next) {
