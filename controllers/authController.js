@@ -68,7 +68,7 @@ exports.login = catchAsync(async (req, res, next) => {
     return next(new AppError('Please provide email and password!', 400));
   }
 
-  // 2) Check if user exitst & password is correct
+  // 2) Check if user exists & password is correct
   // +field if it's not selected by default (select: false)
   const user = await User.findOne({ email }).select('+password');
 
@@ -264,7 +264,7 @@ exports.updatePasword = catchAsync(async (req, res, next) => {
   user.password = req.body.password;
   user.passwordConfirm = req.body.passwordConfirm;
   await user.save();
-  // UIser.findByIdAndUpdate will NOT
+  // User.findByIdAndUpdate will NOT
 
   // 4) Log user in, send JWT
   createSendToken(user, 200, res);

@@ -54,7 +54,7 @@ const sendErrorProd = (err, req, res) => {
         message: err.message,
       });
     }
-    // Programming or other unkown error: don't lear error details
+    // Programming or other unkown error: don't leak error details
     // 1) Log error
     console.error('ERROR 💥', err);
 
@@ -71,7 +71,7 @@ const sendErrorProd = (err, req, res) => {
       msg: err.message,
     });
   }
-  // Programming or other unkown error: don't lear error details
+  // Programming or other unkown error: don't leak error details
   // 1) Log error
   console.error('ERROR 💥', err);
 
